@@ -19,7 +19,6 @@ This provided deep experience with computer vision libraries and frameworks acro
     Development Environments: Linux, Windows (Visual Studio, Code::Blocks, PyCharm) 
 
 <br>
-<br>
 
 🚦 Computer Vision & AI Implementation
 
@@ -30,7 +29,7 @@ This provided deep experience with computer vision libraries and frameworks acro
 
 
 <br>
-<br>
+
 
 🤖 Autonomous Driving Logic
 
@@ -39,7 +38,7 @@ Precise synchronization between the camera, vision processing, and motor control
 
 
 <br>
-<br>
+
 
 🖥️ User Interface & Remote Control
 
@@ -47,7 +46,6 @@ The car supports manual driving via remote control. <br>
 A GPS simulation, implemented using Multithreading library, visualizes the car’s movement, tracks its path, calculates distance traveled, and monitors the car’s angle dynamically. <br>
 
 
-<br>
 <br>
 
 💡 Key Challenges & Learnings
@@ -58,7 +56,6 @@ A GPS simulation, implemented using Multithreading library, visualizes the car�
 
 
 
-<br>
 <br>
 
 🎯 Final Outcome
@@ -71,5 +68,5 @@ The car successfully drives autonomously, following the road while detecting and
 
 This project was a fascinating deep dive into computer vision, deep learning, and real-time AI-driven decision-making, pushing the boundaries of both hardware and software integration. <br>
 
-
+<br>
 
