@@ -20,10 +20,10 @@ This provided deep experience with computer vision libraries and frameworks acro
 
 🚦 Computer Vision & AI Implementation
 
-    Lane Detection: Used camera input to detect road boundaries and determine steering direction by comparing the road’s center to the camera’s position. 
-    Traffic Light Detection: Used object detection & color recognition to classify red, yellow, and green lights and make real-time driving decisions. 
-    Traffic Sign Detection: Trained a deep learning model with TensorFlow using a Kaggle dataset for recognizing traffic signs. Also implemented an OpenCV Cascade Classifier, where I manually created a dataset of traffic signs, traffic lights, and obstacles for training. 
-    Obstacle Avoidance: Used object detection and tracking to identify and navigate around obstacles.
+    - Lane Detection: Used camera input to detect road boundaries and determine steering direction by comparing the road’s center to the camera’s position. 
+    - Traffic Light Detection: Used object detection & color recognition to classify red, yellow, and green lights and make real-time driving decisions. 
+    - Traffic Sign Detection: Trained a deep learning model with TensorFlow using a Kaggle dataset for recognizing traffic signs. Also implemented an OpenCV Cascade Classifier, where I manually created a dataset of traffic signs, traffic lights, and obstacles for training. 
+    - Obstacle Avoidance: Used object detection and tracking to identify and navigate around obstacles.
 
 🤖 Autonomous Driving Logic
 
