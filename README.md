@@ -39,19 +39,19 @@ A GPS simulation, implemented using Multithreading library, visualizes the car�
 
 💡 Key Challenges & Learnings
 
-    Synchronizing image processing speed with the car’s electronic response time to ensure accurate real-time decision-making.
-    Creating a high-quality dataset for training AI models, considering real-world factors like lighting conditions affecting accuracy.
-    Implementing computer vision algorithms across C++, Python, Linux, and Windows, gaining hands-on experience with cross-platform AI development.
+    Synchronizing image processing speed with the car’s electronic response time to ensure accurate real-time decision-making. <br>
+    Creating a high-quality dataset for training AI models, considering real-world factors like lighting conditions affecting accuracy. <br>
+    Implementing computer vision algorithms across C++, Python, Linux, and Windows, gaining hands-on experience with cross-platform AI development. <br>
 
 🎯 Final Outcome
 
-The car successfully drives autonomously, following the road while detecting and obeying traffic signals:
-✅ Avoids obstacles and continues driving.
-✅ Detects and responds to traffic lights (red, yellow, green).
-✅ Recognizes stop signs and stops at the correct distance.
-✅ Identifies the end of the road and makes a U-turn.
+The car successfully drives autonomously, following the road while detecting and obeying traffic signals: <br>
+✅ Avoids obstacles and continues driving.  <br>
+✅ Detects and responds to traffic lights (red, yellow, green).  <br>
+✅ Recognizes stop signs and stops at the correct distance. <br>
+✅ Identifies the end of the road and makes a U-turn. <br>
 
-This project was a fascinating deep dive into computer vision, deep learning, and real-time AI-driven decision-making, pushing the boundaries of both hardware and software integration.
+This project was a fascinating deep dive into computer vision, deep learning, and real-time AI-driven decision-making, pushing the boundaries of both hardware and software integration. <br>
 
 
 
