@@ -14,16 +14,15 @@ This provided deep experience with computer vision libraries and frameworks acro
 
 🔧 Technologies Used
 
-    Languages: C++, Python <br>
-    Libraries & Frameworks: OpenCV, TensorFlow, TensorFlow Lite <br>
-    Development Environments: Linux, Windows (Visual Studio, Code::Blocks, PyCharm) <br>
+    Languages: C++, Python 
+    Libraries & Frameworks: OpenCV, TensorFlow, TensorFlow Lite 
+    Development Environments: Linux, Windows (Visual Studio, Code::Blocks, PyCharm) 
 
 🚦 Computer Vision & AI Implementation
 
-    Lane Detection: Used camera input to detect road boundaries and determine steering direction by comparing the road’s center to the camera’s position. <br>
-    Traffic Light Detection: Used object detection & color recognition to classify red, yellow, and green lights and make real-time driving decisions. <br>
-    Traffic Sign Detection: Trained a deep learning model with TensorFlow using a Kaggle dataset for recognizing traffic signs. Also implemented an OpenCV Cascade Classifier, 
-                            where I manually created a dataset of traffic signs, traffic lights, and obstacles for training. 
+    Lane Detection: Used camera input to detect road boundaries and determine steering direction by comparing the road’s center to the camera’s position. 
+    Traffic Light Detection: Used object detection & color recognition to classify red, yellow, and green lights and make real-time driving decisions. 
+    Traffic Sign Detection: Trained a deep learning model with TensorFlow using a Kaggle dataset for recognizing traffic signs. Also implemented an OpenCV Cascade Classifier, where I manually created a dataset of traffic signs, traffic lights, and obstacles for training. 
     Obstacle Avoidance: Used object detection and tracking to identify and navigate around obstacles.
 
 🤖 Autonomous Driving Logic
@@ -39,9 +38,9 @@ A GPS simulation, implemented using Multithreading library, visualizes the car�
 
 💡 Key Challenges & Learnings
 
-    Synchronizing image processing speed with the car’s electronic response time to ensure accurate real-time decision-making. <br>
-    Creating a high-quality dataset for training AI models, considering real-world factors like lighting conditions affecting accuracy. <br>
-    Implementing computer vision algorithms across C++, Python, Linux, and Windows, gaining hands-on experience with cross-platform AI development. <br>
+    Synchronizing image processing speed with the car’s electronic response time to ensure accurate real-time decision-making. 
+    Creating a high-quality dataset for training AI models, considering real-world factors like lighting conditions affecting accuracy. 
+    Implementing computer vision algorithms across C++, Python, Linux, and Windows, gaining hands-on experience with cross-platform AI development. 
 
 🎯 Final Outcome
 
