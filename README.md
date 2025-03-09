@@ -15,7 +15,7 @@ This provided deep experience with computer vision libraries and frameworks acro
 🔧 Technologies Used
 
     Languages: C++, Python 
-    Libraries & Frameworks: OpenCV, TensorFlow, TensorFlow Lite 
+    Libraries & Frameworks: OpenCV, TensorFlow, TensorFlow Lite, Numpy 
     Development Environments: Linux, Windows (Visual Studio, Code::Blocks, PyCharm) 
 
 <br>
