@@ -2,7 +2,9 @@
 
 ## Self-Driving Car with Computer Vision & Deep Learning 🚗
 
+Watch the video [here](https://youtu.be/1vHhDjWunTw)
 
+[![Watch the video](https://github.com/user-attachments/assets/7f4690b1-4221-4d37-945c-dd8631545ef5)](https://youtu.be/1vHhDjWunTw)
 
 ### **Overview**
 
@@ -70,6 +72,8 @@ This project was a fascinating deep dive into computer vision, deep learning, an
 
 <br>
 
-Preview:
+Graph:
+
+![Project Graph](https://github.com/user-attachments/assets/864ad59d-2d36-4685-a912-daec6416ef65)
 
 <br>
