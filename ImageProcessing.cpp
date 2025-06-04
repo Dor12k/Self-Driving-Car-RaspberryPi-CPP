@@ -9,13 +9,13 @@ ImageProcessing::ImageProcessing(int height, int width) {
 	this->build_bar_values();
 }
 
-// Values bar
+// Values bar of HSV mask
 void ImageProcessing::build_bar_values() {
 
 	// Window defination
 	namedWindow("Values Bar");
-	resizeWindow("Values Bar", Size(500, 200));
-
+	resizeWindow("Values Bar", Size(500, 500));
+	 	
 	// HSV Values Bar
 	createTrackbar("Hue min", "Values Bar", &this->hmin, 255);
 	createTrackbar("Hue max", "Values Bar", &this->hmax, 255);
@@ -54,7 +54,7 @@ Mat ImageProcessing::copy_image(Mat &image, int scale) {
 	Mat copy_frame;
 
 	image.copyTo(copy_frame);
-
+	
 	if (1 < scale) {
 		resize(copy_frame, copy_frame, Size(int(this->width / scale), int(this->height / scale)));
 	}
@@ -62,16 +62,16 @@ Mat ImageProcessing::copy_image(Mat &image, int scale) {
 	return copy_frame;
 }
 
-// Create threshhold mask
-Mat ImageProcessing::threshold_mask(Mat &image){
+// Create threshold mask
+Mat ImageProcessing::threshold_mask(Mat& image) {
 
-    Mat img;
+	Mat img;
 
-    cvtColor(image, img, COLOR_BGR2GRAY);
+	cvtColor(image, img, COLOR_BGR2GRAY);
 
-    threshold(img, img, this->threshold_value, this->max_binary_value, THRESH_BINARY);
+	threshold(img, img, this->threshold_value, this->max_binary_value, THRESH_BINARY);
 
-    return img;
+	return img;
 }
 
 // Create HSV mask
@@ -100,8 +100,7 @@ Mat ImageProcessing::edge_mask(Mat &image) {
 
 	GaussianBlur(imgGray, imgBlur, Size(7, 7), 5, 0);
 
-	//Canny(imgBlur, imgCanny, 25, 50);
-	Canny(imgBlur, imgCanny, 25, 100);
+	Canny(imgBlur, imgCanny, 25, 75);
 
 	dilate(imgCanny, imgDilate, kernel);
 
@@ -123,7 +122,7 @@ Mat ImageProcessing::warp_image(Mat &img, Mat &src_img, int scale) {
 
 	// Float point of source and destiny images
 	Point2f dst[4] = { {0.0f,0.0f}, {(float)w, 0.0f}, {0.0f, (float)h}, {(float)w, (float)h} };
-	Point2f src[4] = { {(float)top_w, (float)top_h}, {(float)(w - (float)top_w), (float)top_h},
+	Point2f src[4] = { {(float)top_w, (float)top_h}, {(float)(w - (float)top_w), (float)top_h}, 
 					   {(float)bot_w, (float)bot_h}, {(float)(w - bot_w), (float)bot_h} };
 
 	Point2f org[4] = { {(float)top_width, (float)top_height}, {(float)(width - (float)top_width), (float)top_height},
@@ -159,15 +158,15 @@ int ImageProcessing::get_curve_direction(Mat &image, Mat &warp_mask_scaled, int 
 
 // Function find base point on histogram image
 int ImageProcessing::get_histogram(Mat &mask, float percent, int region, int scale) {
-
-	int max = 0, min = 0 , val = 0;
+	
+	int max = 0, min = 0 ,val = 0;
 
 	int* histogram = new int[int(this->width / scale)];
 
 	// Sum col values and find the max value
 	for (int i = 0; i < mask.cols; i++) {
 
-		histogram[i] = 0;
+		histogram[i] = 0;	
 
 		for (int j = mask.rows; region <= j; j--) {
 
@@ -211,44 +210,6 @@ int ImageProcessing::get_curve_point(int histogram[], float percent, int max, in
 	average_point = int(sum_index / counter_index);
 
 	return average_point;
-}
-
-// Function draw lane (need to improve)
-Mat ImageProcessing::draw_lane2(Mat &image, Mat mask_image, int scale) {
-
-	Vec3b color = {0, 255, 0};
-
-	Mat mask_copy, green_img;
-
-	mask_image.copyTo(mask_copy);
-
-	green_img = this->initialize_image(scale);
-
-	int region = mask_copy.rows - int(mask_copy.rows / 3);
-
-	for (int i = 0; i < mask_copy.cols; i++) {
-		for (int j = 0; j < mask_copy.rows; j++) {
-
-			// Set 3/4 pixels from image black
-			if (j < region) {
-				mask_copy.at<uchar>(Point(i, j)) = 0;
-			}
-			// Set 1/4 pixels from image green
-			else {
-				green_img.at<Vec3b>(Point(i, j)) = color;
-			}
-		}
-	}
-	// Convert mask_copy from 1 channel to 3 channels;
-	cvtColor(mask_copy, mask_copy, COLOR_GRAY2BGR);
-
-	// Create mask in green color
-	bitwise_and(mask_copy, green_img, green_img);
-
-	// Connect two frames to one with green curve lane
-	addWeighted(image, 1, green_img, 1, 0, image);
-
-	return image;
 }
 
 // Function draw the lane on the screen 

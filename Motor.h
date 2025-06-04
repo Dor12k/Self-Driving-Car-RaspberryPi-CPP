@@ -4,7 +4,6 @@
 # include <chrono>
 //# include <windows.h>
 # include <iostream>
-# include <wiringPi.h>
 
 using namespace std;
 
@@ -32,27 +31,27 @@ class Motor{
 		int motor_forward(int left_speed, int right_speed, int distance);
 		int motor_right(int left_speed, int right_speed, int distance);
 		int motor_left(int left_speed, int right_speed, int distance);
-		void motor_stand();
+		int motor_stand();
 
-private:
+	private:
 
-	int interval = 1;
+		int interval = 1;
 
-	int max_speed = 0;
+		int max_speed = 0;
 
-	int SDK_SPEED = 50;
+		int SDK_SPEED = 50;
 
-	int movement_speed = 0;
+		int movement_speed = 0;
 
-	// Store the motor SDK speed
-	int motor_sdk_angular_speed = 50;
-	int motor_sdk_movement_speed = 50;
+		string last_cmd = "";
 
-	// Represent speed
-	int motor_angular_speed = int(360 / 10);    // Angular speed degrees / s(50d / s)
-	int motor_movement_speed = int(390 / 10);  // Forward speed in cm / s(50cm / s)
+		// Store the motor SDK speed
+		int motor_sdk_angular_speed = 50;
+		int motor_sdk_movement_speed = 50;
 
-	int enableA, inA1, inA2, inB1, inB2, enableB;
+		// Represent speed
+		int motor_angular_speed = int(360 / 10);    // Angular speed degrees / s(50d / s)
+		int motor_movement_speed = int(390 / 10);  // Forward speed in cm / s(50cm / s)
 
-	string last_cmd = "";
+		int enableA, inA1, inA2, inB1, inB2, enableB;
 };

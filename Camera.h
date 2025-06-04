@@ -25,20 +25,20 @@ public:
 
 private:
 
-	const int HEIGHT = 350, WIDTH = 500;
-
-	string path = "Resource/Road 24.MOV";
-
-	VideoCapture camera;
-
 	Mat img;
 
 	int fps = 0;
 
 	int FPS = 0;
 
-	clock_t start = clock();
-	
+	VideoCapture camera;
 
+	clock_t start = clock();
+
+	const int HEIGHT = 350, WIDTH = 500;
+
+	string path = "Resource/Road 24.MOV";
+	//string path = "Resource/Road 4.MOV";
+	//string path = "Resource/video5.avi";
 };
 

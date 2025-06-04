@@ -14,7 +14,7 @@ class Screen
 public:
 
 	void display_frame(Mat image);
-	void design_frame(Mat &image, int fps);
+	void design_frame(Mat &image, int fps, float speed);
 
 };
 
