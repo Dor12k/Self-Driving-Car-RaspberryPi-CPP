@@ -13,7 +13,7 @@
 
 ![Project Graph](https://github.com/user-attachments/assets/864ad59d-2d36-4685-a912-daec6416ef65)
 
-<br>
+
 ### **Overview**
 
 This project is a fully functional self-driving car built using Raspberry Pi, Arduino UNO, and C++/Python for computer vision and deep learning. <br>
