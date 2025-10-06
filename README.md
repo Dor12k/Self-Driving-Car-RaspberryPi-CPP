@@ -1,9 +1,9 @@
 
 
-## Self-Driving Car | Computer Vision & Deep Learning on Embedded Systems 🚗
+### Self-Driving Car | Computer Vision & Deep Learning on Embedded Systems 🚗
 
 
-# <img width="40" height="30" alt="Image" src="https://github.com/user-attachments/assets/567d1706-facf-437a-aaca-9f82ccbe51dd" /> Watch the video [here](https://youtu.be/1vHhDjWunTw)
+## <img width="40" height="30" alt="Image" src="https://github.com/user-attachments/assets/567d1706-facf-437a-aaca-9f82ccbe51dd" /> Watch the video [here](https://youtu.be/1vHhDjWunTw)
 
 [![Watch the video](https://github.com/user-attachments/assets/7f4690b1-4221-4d37-945c-dd8631545ef5)](https://youtu.be/1vHhDjWunTw)
 
