@@ -1,11 +1,19 @@
 
 
-## Self-Driving Car with Computer Vision & Deep Learning 🚗
+## Self-Driving Car | Computer Vision & Deep Learning on Embedded Systems 🚗
 
-## Watch the video [here](https://youtu.be/1vHhDjWunTw)
+
+# <img width="40" height="30" alt="Image" src="https://github.com/user-attachments/assets/567d1706-facf-437a-aaca-9f82ccbe51dd" /> Watch the video [here](https://youtu.be/1vHhDjWunTw)
 
 [![Watch the video](https://github.com/user-attachments/assets/7f4690b1-4221-4d37-945c-dd8631545ef5)](https://youtu.be/1vHhDjWunTw)
 
+<br> 
+
+### **Architecture Diagram:**
+
+![Project Graph](https://github.com/user-attachments/assets/864ad59d-2d36-4685-a912-daec6416ef65)
+
+<br>
 ### **Overview**
 
 This project is a fully functional self-driving car built using Raspberry Pi, Arduino UNO, and C++/Python for computer vision and deep learning. <br>
@@ -72,8 +80,3 @@ This project was a fascinating deep dive into computer vision, deep learning, an
 
 <br>
 
-Graph:
-
-![Project Graph](https://github.com/user-attachments/assets/864ad59d-2d36-4685-a912-daec6416ef65)
-
-<br>
